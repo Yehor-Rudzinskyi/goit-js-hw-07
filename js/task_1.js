@@ -5,5 +5,5 @@ quantityOfCategories(categoriesListItemRef);
 const tittleRef = document.querySelectorAll('.item > h2');
 tittleRef.forEach(element => {
     console.log(`\u2022 Категория: ${element.textContent}`);
-    console.log(`\u2022 Количество элементов: ${element.parentNode.children[1].children.length}`);
+    console.log(`\u2022 Количество элементов: ${element.nextElementSibling.children.length}`);
 });

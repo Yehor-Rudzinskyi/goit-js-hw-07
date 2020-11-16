@@ -6,15 +6,15 @@ const ingredients = [
   'Зелень',
   'Приправы',
 ];
-const makeListFromArrow = function (arr) {
+
+const makeLiFromArrow = function (arr) {
     const liRef = document.createElement('li')
     liRef.textContent = arr;
     return liRef
 }
-const ingredientsLists = ingredients.map((product) => makeListFromArrow(product));
+
+const ingredientList = ingredients.map((product) => makeLiFromArrow(product));
 
 
-const addToIngredients = document.querySelector('#ingredients')
-addToIngredients.append(...ingredientsLists);
-
-console.log(ingredientsLists);
+const listOfIngredients = document.querySelector('#ingredients')
+listOfIngredients.append(...ingredientList);

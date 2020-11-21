@@ -19,8 +19,8 @@ const images = [
 const makeLIFromImages = function (arr) {
     const liForGallery = document.createElement('li');
     const imgForLiOfGallery = document.createElement('img');
-    imgForLiOfGallery.setAttribute('url', `${arr.url}`)
-    imgForLiOfGallery.setAttribute('alt',`${arr.alt}`)
+    imgForLiOfGallery.setAttribute('src', arr.url)
+    imgForLiOfGallery.setAttribute('alt', arr.alt)
     liForGallery.appendChild(imgForLiOfGallery)
     return liForGallery
 }
